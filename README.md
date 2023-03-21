@@ -9,3 +9,16 @@ The instance have the following configuration:
 - Default VPC
 - Security group allowing SSH access from anywhere
 - Tag with the name 'My EC2 Instance'
+
+
+## To use it, follow these steps:
+
+- Clone the repo - ``` git clone https://github.com/Nikhil26112/EC2-instance-using-terraform.git ```
+- Change directory - ``` cd EC2-instance-using-terraform ```
+- Run following commands to create EC2 instance:
+``` 
+- terraform init 
+- terraform plan
+- terraform apply 
+``` 
+- To delete every resource you made using this script- ``` terrafrom destroy ```
