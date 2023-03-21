@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_key_pair" "my-key" {
   key_name   = "my-key"
-  # In public key enter your id_rsa.pub file value or generate id_rsa and id_rsa.pub using ssh-keygen
+  # In public key enter your id_rsa.pub value or add key path
   public_key = file("${path.module}/id_rsa.pub") 
 }
 
