@@ -4,8 +4,7 @@ provider "aws" {
 
 resource "aws_key_pair" "my-key" {
   key_name   = "my-key"
-  # In public key enter your id_rsa.pub value or add key path
-  public_key = file("${path.module}/id_rsa.pub") 
+  public_key = file("~/.ssh/id_rsa.pub") 
 }
 
 resource "aws_instance" "My-EC2-Instance" {
